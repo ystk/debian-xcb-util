@@ -1,3 +1,23 @@
+xcb-util (0.3.8-2) unstable; urgency=low
+
+  * Convert to multi-arch.  Thanks to Tom Ellis <tom.ellis@canonical.com>
+    and Riku Voipio <riku.voipio@iki.fi>.  (Closes: #640521, LP: #925388)
+
+ -- Steve Langasek <vorlon@debian.org>  Thu, 09 Feb 2012 16:40:57 -0800
+
+xcb-util (0.3.8-1) unstable; urgency=low
+
+  [ Arnaud Fontaine ]
+  * New upstream release.
+    + xcb-util has been split up into several modules.
+    + Build-Depends on libxcb1-dev >= 1.6. Closes: #544865.
+  * debian/control:
+    + Bump Standards-Version to 3.9.2. No changes needed.
+    + Now maintain as part of pkg-xorg team.
+  * Switch to "3.0 (quilt)" source format.
+
+ -- Arnaud Fontaine <arnau@debian.org>  Fri, 06 May 2011 21:44:09 +0900
+
 xcb-util (0.3.6-1) unstable; urgency=low
 
   * New upstream release

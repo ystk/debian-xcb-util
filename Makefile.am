@@ -1,6 +1,22 @@
 
-MAINTAINERCLEANFILES = Makefile.in
+ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = atom aux event property icccm image keysyms reply renderutil
+SUBDIRS = src
 
-EXTRA_DIST=xcb-util-common.h
+pkgconfig_DATA =	\
+	xcb-atom.pc	\
+	xcb-aux.pc	\
+	xcb-event.pc	\
+	xcb-util.pc
+
+MAINTAINERCLEANFILES = ChangeLog INSTALL
+
+.PHONY: ChangeLog INSTALL
+
+INSTALL:
+	$(INSTALL_CMD)
+
+ChangeLog:
+	$(CHANGELOG_CMD)
+
+dist-hook: ChangeLog INSTALL
