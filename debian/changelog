@@ -1,3 +1,13 @@
+xcb-util (0.3.8-3) unstable; urgency=medium
+
+  * debian/control, debian/rules:
+    + Use dh-autoreconf to make porters' task easier. Thanks to Breno
+      Leitao. Closes: #748983.
+  * debian/control: bump Standards-Version to 3.9.5.
+    + debian/copyright: switch to machine-readable format.
+
+ -- Arnaud Fontaine <arnau@debian.org>  Tue, 26 Aug 2014 20:24:41 +0200
+
 xcb-util (0.3.8-2) unstable; urgency=low
 
   * Convert to multi-arch.  Thanks to Tom Ellis <tom.ellis@canonical.com>
@@ -129,4 +139,3 @@ xcb-util (0.2-1) experimental; urgency=low
   * Initial release (Closes: #437681)
 
  -- Julien Danjou <acid@debian.org>  Tue, 25 Mar 2008 19:14:42 +0100
-

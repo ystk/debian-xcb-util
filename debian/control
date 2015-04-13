@@ -15,8 +15,9 @@ Build-Depends: cdbs ( >= 0.4.93),
                autotools-dev,
                autoconf,
                automake,
-               xutils-dev
-Standards-Version: 3.9.2
+               xutils-dev,
+               dh-autoreconf
+Standards-Version: 3.9.5
 Homepage: http://xcb.freedesktop.org
 Vcs-Git: git://git.debian.org/pkg-xorg/lib/xcb-util.git
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/xcb-util.git
